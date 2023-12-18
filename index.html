@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Космос</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a64adbd6-6c2d-4ed5-8eab-47a5eefba5fb&lang=ru_RU" type="text/javascript"></script>
+    <style>
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+
+                <div class="button-block">
+                    <button class="btn send-message" type="submit">Отправить статью</button>
+                    <button class="btn register" type="submit">Регистрация</button>
+                </div>
+
+                <div class="header-inner">
+                    <nav class="menu">
+                        <ul class="menu-items">
+                            <li class="menu-item"><a href="./index.html" class="menu-item__link">Космос</a></li>
+							<li class="menu-item"><a href="./black.html" class="menu-item__link">Чёрные дыры</a></li>
+							<li class="menu-item"><a href="./exoplanets.html" class="menu-item__link">Экзопланеты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-content">
+
+                    <div class="header-image">
+                        <img src="./img/2.jpg" alt="">
+                    </div>
+
+                    <div class="header-title">
+                        <h2 class="title">
+                            «Что такое космос»
+                        </h2>
+                    </div>
+
+                    <div class="header-info">
+                        <div class="header-left">
+                            <p class="text">
+                                Человечество вступило в космич. век. В наше время всякому образованному человеку необходимо знать, 
+								что такое космос, и иметь представление о происходящих в космосе процессах.
+								Прежде чем перейти к изложению совр. представлений о космосе, выясним значение самого слова "космос". "Космос" по-гречески - 
+								это порядок, устройство, стройность (вообще, нечто упорядоченное). 
+								Философы Древней Греции понимали под словом "космос" Мироздание, рассматривая его как упорядоченную гармоничную систему. 
+								Космосу противопоставлялся беспорядок, хаос. Для древних греков понятия порядка и красоты в явлениях природы были тесно связаны. 
+								Эта точка зрения держалась в философии и науке долго; недаром даже Коперник считал, что орбиты планет должны быть окружностями лишь потому, 
+								что окружность красивее эллипса.
+								В понятие "космос" сначала включали не только мир небесных светил, но и всё, с чем мы сталкиваемся на поверхности Земли. 
+								Знаменитый естествоиспытатель 19 в. Александр Гумбольдт создал фундаментальный труд "Космос" (5 томов, 1845-62), суммировавший всё, 
+								что тогда было известно о природе вообще.
+								Иногда под космосом понимали только планетную систему, окружающую Солнце. 
+								В совр. словоупотреблении в связи с этим остался термин "космогония", к-рым обычно обозначают науку о происхождении Солнечной системы, а не всей Вселенной в целом.
+								Чаще под космосом понимают Вселенную, рассматриваемую как нечто единое, подчиняющееся общим законам. 
+								Отсюда происходит название космологии - науки, пытающейся найти законы строения и развития Вселенной как целого. 
+								Т. о., в названиях "космогония" и "космология" космос понимается в разном смысле.
+							</p>
+                        </div>
+                        <div class="header-right">
+                            <img class="header-right_img" src="./img/1.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+
+        <div id="map"></div>
+
+        <script>
+            ymaps.ready(init);
+
+            function init() {
+                // Вставьте координаты вашего местоположения вместо [latitude, longitude]
+                var myMap = new ymaps.Map("map", {
+                    center: [52, 34],
+                    zoom: 15
+                });
+
+                var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Ваша подсказка'
+                }, {
+                    preset: 'islands#dotIcon',
+                    iconColor: '#0095b6'
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+            }
+        </script>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <p class="text footer-tel">Тел: 87756507327</p>
+                    <ul class="social-links">
+                        <li class="social-item"><a class="social-link" href="Kosmos@mail.ru">Email</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="overlay fade" id="registrationOverlay">
+        <div class="popup">
+            <div class="popup-close">&times;</div>
+            <div class="popup-title">Регистрация</div>
+            <div class="popup-form">
+                <form action="#" method="post" class="main-form" id="articleSubmissionForm">
+                    <div class="popup-form-header">Заполните форму для регистрации!</div>
+                    <label class="popup-form__label" for="email">E-mail:</label>
+                    <input class="popup-form__input" name="email" type="email" required placeholder="example@mail.ru">
+                    <label class="popup-form__label" for="phone">Телефон:</label>
+                    <input class="popup-form__input" name="phone" type="tel" required placeholder="8 775 650 7327">
+                    <button class="button popup-form__btn" type="submit">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlayy fade" id="articleSubmissionOverlay">
+        <div class="popupp">
+            <div class="popup-closee">&times;</div>
+            <div class="popup-titlee">Отправить статью</div>
+            <div class="popup-formm">
+                <form action="#" class="main-formm" id="articleSubmissionForm">
+                    <div class="popup-form-headerr">Заполните форму для отправки статьи!</div>
+                    <label class="popup-form__labell" for="articleTitle">Тема статьи:</label>
+                    <input class="popup-form__inputt" name="articleTitle" type="text" required placeholder="Космос - это чудо!">
+                    <br>
+                    <label class="popup-form__labell" for="articleContent">Текст статьи:</label>
+                    <textarea class="popup-form__text" name="articleContent" placeholder="Текст статьи" required></textarea>
+                    <button class="button popup-form__btnn" type="submit">Отправить</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
