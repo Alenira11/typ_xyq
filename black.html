@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Чёрные дыры</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+
+				<div class="button-block">
+					<button class="btn send-message" type="submit">Отправить статью</button>
+					<button class="btn register" type="submit">Регистрация</button>
+				</div>
+
+				<div class="header-inner">
+					<nav class="menu">
+						<ul class="menu-items">
+							<li class="menu-item"><a href="./index.html" class="menu-item__link">Космос</a></li>
+							<li class="menu-item"><a href="./black.html" class="menu-item__link">Чёрные дыры</a></li>
+							<li class="menu-item"><a href="./exoplanets.html" class="menu-item__link">Экзопланеты</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header-content">
+
+					<div class="header-image">
+						<img src="./img/4.jpg" alt="">
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+
+		<section class="section">
+			<div class="container">
+
+				<div class="article-block">
+
+					<div class="article-content">
+						<h2 class="article-content_title title">Что такое чёрная дыра?</h2>
+						<p class="text"></p>
+						<p class="text">
+							Черная дыра — область пространства-времени с настолько сильным гравитационным полем, что ничто, включая свет, не может ее покинуть. 
+							Граница, разделяющая черную дыру и внешнее пространство, называется горизонтом событий. 
+							Черная дыра возникает на финальных стадиях эволюции самых массивных звезд. 
+							На последних этапах своей жизни, когда у такой звезды заканчивается процесс горения ее химических элементов, ядро схлопывается и звезда коллапсирует. 
+							В результате коллапса, если ничто не может его остановить, возникает черная дыра. Типичная масса такого объекта превышает солнечную в десять раз.
+							<a class="header-left_link article-link"
+								href="https://indicator.ru/label/chernaya-dyra">Подробнее
+							</a>
+						</p>
+						<img class="article-img" src="./img/3.jpeg" alt="">
+					</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-inner">
+					<p class="text footer-tel">Тел: 87756507327</p>
+					<ul class="social-links">
+						<li class="social-item"><a class="social-link" href="Kosmos@mail.ru">Email</a> </li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="overlay fade" id="registrationOverlay">
+        <div class="popup">
+            <div class="popup-close">&times;</div>
+            <div class="popup-title">Регистрация</div>
+            <div class="popup-form">
+                <form action="#" class="main-form" id="registrationForm">
+                    <div class="popup-form-header">Заполните форму для регистрации!</div>
+                    <label class="popup-form__label" for="email">E-mail:</label>
+                    <input class="popup-form__input" name="email" type="email" required placeholder="example@mail.ru">
+                    <label class="popup-form__label" for="phone">Телефон:</label>
+                    <input class="popup-form__input" name="phone" type="tel" required placeholder="8 775 650 7327">
+                    <button class="button popup-form__btn" type="submit">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlayy fade" id="articleSubmissionOverlay">
+        <div class="popupp">
+            <div class="popup-closee">&times;</div>
+            <div class="popup-titlee">Отправить статью</div>
+            <div class="popup-formm">
+                <form action="#" class="main-formm" id="articleSubmissionForm">
+                    <div class="popup-form-headerr">Заполните форму для отправки статьи!</div>
+                    <label class="popup-form__labell" for="articleTitle">Тема статьи:</label>
+                    <input class="popup-form__inputt" name="articleTitle" type="text" required placeholder="Космос - это чудо!">
+                    <br>
+                    <label class="popup-form__labell" for="articleContent">Текст статьи:</label>
+                    <textarea class="popup-form__text" name="articleContent" placeholder="Текст статьи" required></textarea>
+                    <button class="button popup-form__btnn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Экзопланеты</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+
+				<div class="button-block">
+					<button class="btn send-message" type="submit">Отправить статью</button>
+					<button class="btn register" type="submit">Регистрация</button>
+				</div>
+
+				<div class="header-inner">
+					<nav class="menu">
+						<ul class="menu-items">
+							<li class="menu-item"><a href="./index.html" class="menu-item__link">Космос</a></li>
+							<li class="menu-item"><a href="./black.html" class="menu-item__link">Чёрные дыры</a></li>
+							<li class="menu-item"><a href="./exoplanets.html" class="menu-item__link">Экзопланеты</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header-content">
+
+					<div class="header-image">
+						<img src="./img/6.jpg" alt="">
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+
+		<section class="section">
+			<div class="container">
+
+				<div class="article-block">
+
+					<div class="article-content article-star">
+						<div class="article-left">
+							<img class="article-img " src="./img/5.jpg" alt="">
+						</div>
+						<div class="article-right">
+							<h2 class="article-content_title title">Что такое экзопланета?</h2>
+							<p class="text"></p>
+							<p class="text">
+								В слове «экзопланета» приставка «экзо» означает «вне», «снаружи». Таким образом, экзопланеты — это все планеты за пределами Солнечной системы. 
+								Большинство из них, как и Земля, вращаются вокруг звёзд, но встречаются и не привязанные к орбите определенной звезды[4].
+								Они могут быть достаточно горячими, чтобы вскипятить металл, или запертыми в глубокой заморозке; плотно вращаться вокруг своих звёзд, и «год» длится всего несколько дней; 
+								вращаться вокруг двух солнц одновременно. Некоторые экзопланеты — бессолнечные бродяги, блуждающие по галактике в вечной тьме.
+								Большая часть открытых на сегодняшний день экзопланет находятся в одном регионе нашей Галактики — внутри Млечного пути. 
+								При помощи мощных телескопов учёные измеряют размеры планет, их состав и поверхность. Большинство из них состоят из тех же элементов, что и планеты Солнечной системы. 
+								Отличаются только комбинации и соотношение: на некоторых больше воды и льда, на других — железа и углерода. 
+								При этом нет ни одной планеты, которая была бы идентична Земле или другим телам Солнечной системы[4]. 
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-inner">
+					<p class="text footer-tel">Тел: 87756507327</p>
+					<ul class="social-links">
+						<li class="social-item"><a class="social-link" href="Kosmos.97@mail.ru">Email</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="overlay fade" id="registrationOverlay">
+        <div class="popup">
+            <div class="popup-close">&times;</div>
+            <div class="popup-title">Регистрация</div>
+            <div class="popup-form">
+                <form action="#" class="main-form" id="registrationForm">
+                    <div class="popup-form-header">Заполните форму для регистрации!</div>
+                    <label class="popup-form__label" for="email">E-mail:</label>
+                    <input class="popup-form__input" name="email" type="email" required placeholder="example@mail.ru">
+                    <label class="popup-form__label" for="phone">Телефон:</label>
+                    <input class="popup-form__input" name="phone" type="tel" required placeholder="8 775 650 7327">
+                    <button class="button popup-form__btn" type="submit">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlayy fade" id="articleSubmissionOverlay">
+        <div class="popupp">
+            <div class="popup-closee">&times;</div>
+            <div class="popup-titlee">Отправить статью</div>
+            <div class="popup-formm">
+                <form action="#" class="main-formm" id="articleSubmissionForm">
+                    <div class="popup-form-headerr">Заполните форму для отправки статьи!</div>
+                    <label class="popup-form__labell" for="articleTitle">Тема статьи:</label>
+                    <input class="popup-form__inputt" name="articleTitle" type="text" required placeholder="Космос - это чудо!">
+                    <br>
+                    <label class="popup-form__labell" for="articleContent">Текст статьи:</label>
+                    <textarea class="popup-form__text" name="articleContent" placeholder="Текст статьи" required></textarea>
+                    <button class="button popup-form__btnn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
